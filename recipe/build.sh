@@ -5,7 +5,9 @@ set -ex
 # Get an updated config.sub and config.guess
 cp $BUILD_PREFIX/share/gnuconfig/config.* .
 
-export LDFLAGS="$LDFLAGS -lintl"
+if [[ $target_platform == "osx-arm64" ]]; then
+	export LDFLAGS="$LDFLAGS -lintl"
+fi
 
 ./configure --prefix=$PREFIX
 
