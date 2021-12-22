@@ -19,6 +19,7 @@ requirements:
     - {{ compiler('cxx') }}
     - make
     - gnuconfig  # [unix]
+    - gettext
   host:
     - gettext
     - perl
