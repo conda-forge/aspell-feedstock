@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aspell-feedstoc
 
 Summary: GNU Aspell is a Free and Open Source spell checker
 
-Development: hhttps://github.com/GNUAspell/aspell
+Development: https://github.com/GNUAspell/aspell
 
 Documentation: http://aspell.net/man-html/
 
