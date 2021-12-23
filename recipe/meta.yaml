@@ -48,7 +48,7 @@ about:
     multiple dictionaries at once and intelligently handling personal
     dictionaries when more than one Aspell process is open at once.
   doc_url: http://aspell.net/man-html/
-  dev_url: hhttps://github.com/GNUAspell/aspell
+  dev_url: https://github.com/GNUAspell/aspell
 
 extra:
   recipe-maintainers:
