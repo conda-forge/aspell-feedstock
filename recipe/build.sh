@@ -5,12 +5,18 @@ set -ex
 # Get an updated config.sub and config.guess
 cp $BUILD_PREFIX/share/gnuconfig/config.* .
 
-./configure --prefix=$PREFIX --host=x86_64-apple-darwin13.4.0
+(
+export CC=$CC_FOR_BUILD
+export AR=($CC_FOR_BUILD -print-prog-name=ar)
+export NM=($CC_FOR_BUILD -print-prog-name=nm)
+export host_alias=$build_alias
+
+./configure --prefix=$PREFIX --host="$BUILD"
 
 make -j${CPU_COUNT}
 
 make install
-
+)
 
 # if [[ "$CONDA_BUILD_CROSS_COMPILATION" != "1" ]]; then
 #     # The dictionaries' configure below tries to run the just compiled aspell
