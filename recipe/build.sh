@@ -17,8 +17,8 @@ make install
 
 
 if [[ "$CONDA_BUILD_CROSS_COMPILATION" != "1" ]]; then
-    # dictionaries' configure below tries to run the just compiled aspell
-    # which fails when cross-compiling. We there set DESTDIR explicitly below.
+    # The dictionaries' configure below tries to run the just compiled aspell
+    # which fails when cross-compiling. We therefore set DESTDIR explicitly below.
     set +e
 fi
 
