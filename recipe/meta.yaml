@@ -297,7 +297,10 @@ requirements:
 
 test:
   commands:
-    - aspell --version  # [build_platform == target_platform]
+    - $PREFIX/bin/aspell --version  # [build_platform == target_platform]
+    - $PREFIX/bin/aspell dicts  # [build_platform == target_platform]
+    - [ $(echo "misspell worrd" | $PREFIX/bin/aspell list -d en_US) = "worrd" ]  # [build_platform == target_platform]
+
 
 about:
   home: http://aspell.net/
