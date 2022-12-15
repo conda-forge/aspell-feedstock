@@ -9,8 +9,8 @@ source:
   - url: https://ftp.gnu.org/gnu/aspell/aspell-{{ version }}.tar.gz
     sha256: f9b77e515334a751b2e60daab5db23499e26c9209f5e7b7443b05235ad0226f2
   # Dictionaries:
-  - url: https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2018.04.16-0.tar.bz2
-    sha256: f11071e74b0c0753f4afabf024941a5c3a96bafe3879211ebd47bc34e76fbd2f
+  - url: https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2
+    sha256: 4c8f734a28a088b88bb6481fcf972d0b2c3dc8da944f7673283ce487eac49fb3
   - url: https://ftp.gnu.org/gnu/aspell/dict/de/aspell6-de-20161207-7-0.tar.bz2
     sha256: c2125d1fafb1d4effbe6c88d4e9127db59da9ed92639c7cbaeae1b7337655571
   - url: https://ftp.gnu.org/gnu/aspell/dict/es/aspell6-es-1.11-2.tar.bz2
