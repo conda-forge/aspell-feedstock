@@ -9,6 +9,7 @@ cp $BUILD_PREFIX/share/gnuconfig/config.* .
 export CC=$CC_FOR_BUILD
 export CXX=$CXX_FOR_BUILD
 export AR=($CC_FOR_BUILD -print-prog-name=ar)
+export LD=($CC_FOR_BUILD -print-prog-name=ld)
 export NM=($CC_FOR_BUILD -print-prog-name=nm)
 export host_alias=$build_alias
 export CFLAGS=""
