@@ -11,7 +11,7 @@ export CXX=$CXX_FOR_BUILD
 export AR=($CC_FOR_BUILD -print-prog-name=ar)
 export LD=($CC_FOR_BUILD -print-prog-name=ld)
 export NM=($CC_FOR_BUILD -print-prog-name=nm)
-export LDFLAGS="-L$BUILD_PREFIX/lib -Wl,-rpath,$BUILD_PREFIX/lib"
+export LDFLAGS="-L$BUILD_PREFIX/lib -Wl,-rpath,$BUILD_PREFIX/lib -lintl"
 export host_alias=$build_alias
 export CFLAGS=""
 export CXXFLAGS=""
