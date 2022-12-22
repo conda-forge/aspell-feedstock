@@ -11,6 +11,9 @@ export CXX=$CXX_FOR_BUILD
 export AR=($CC_FOR_BUILD -print-prog-name=ar)
 export NM=($CC_FOR_BUILD -print-prog-name=nm)
 export host_alias=$build_alias
+export CFLAGS=""
+export CXXFLAGS=""
+export CPPFLAGS=""
 
 ./configure --prefix=$PREFIX --host="$BUILD" || { cat config.log; exit 1; }
 
